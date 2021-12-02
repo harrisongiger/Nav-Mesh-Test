@@ -6,9 +6,6 @@ using UnityEngine.AI;
 public class AgentMove : MonoBehaviour
 {
 
-    public Material Red;
-    public Material Green;
-    public Material Blue;
     private float type;
     public Transform home;
     public Transform home2;
@@ -33,13 +30,10 @@ public class AgentMove : MonoBehaviour
         if(home != null && home2 !=null && home3 != null) 
         {
             if (type == 0){
-                agent.GetComponent<MeshRenderer>().material = Red;
                 _navMeshAgent.SetDestination(home.position);
             } else if (type == 1) {
-                agent.GetComponent<MeshRenderer>().material = Green;
                 _navMeshAgent.SetDestination(home2.position);
             } else if (type == 2) {
-                agent.GetComponent<MeshRenderer>().material = Blue;
                 _navMeshAgent.SetDestination(home3.position);
             }
 
