@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
     }
 }
+//blue-fighting, red FPS, green Strategy, Yellow Sports, black others
+//fighting 32, fps 21, strategy 10, sports 24, other 13
