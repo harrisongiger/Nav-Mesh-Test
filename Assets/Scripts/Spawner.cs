@@ -70,7 +70,7 @@ public class Spawner : MonoBehaviour
 
             if (rand3 <= 10)
             {
-                //agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Green);
+                
                 agentcolor = "Green";
                 var GreenRand = Random.Range(0, 100);
 
@@ -101,7 +101,6 @@ public class Spawner : MonoBehaviour
             }
             else if (rand3 <= 23)
             {
-                //agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Grey);
                 agentcolor = "Grey";
                 var GreyRand = Random.Range(0, 100);
 
@@ -132,7 +131,6 @@ public class Spawner : MonoBehaviour
             }
             else if (rand3 <= 44)
             {
-                //agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Red);
                 agentcolor = "Red";
                 var RedRand = Random.Range(0, 100);
 
@@ -163,7 +161,6 @@ public class Spawner : MonoBehaviour
             }
             else if (rand3 <= 68)
             {
-                //agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Yellow);
                 agentcolor = "Yellow";
                 var YellowRand = Random.Range(0, 100);
 
@@ -194,7 +191,6 @@ public class Spawner : MonoBehaviour
             }
             else if (rand3 <= 100)
             {
-                //agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Blue);
                 agentcolor = "Blue";
                 var BlueRand = Random.Range(0, 100);
 
@@ -224,52 +220,6 @@ public class Spawner : MonoBehaviour
                 }
             }
 
-        /*    var rand = Random.Range(0, 100);
-
-            if (rand <= 25)
-            {
-                agentsnuts = Instantiate(Agent1, spawnlocation);
-                agentsnuts.GetComponent<NavMeshAgent>().destination = home1.transform.position;
-            }
-            else if (rand <= 50)
-            {
-                agentsnuts = Instantiate(Agent2, spawnlocation);
-                agentsnuts.GetComponent<NavMeshAgent>().destination = home2.transform.position;
-            }
-            else if (rand <= 75)
-            {
-                agentsnuts = Instantiate(Agent3, spawnlocation);
-                agentsnuts.GetComponent<NavMeshAgent>().destination = home3.transform.position;
-            }
-            else if (rand <= 100)
-            {
-                agentsnuts = Instantiate(Agent4, spawnlocation);
-                agentsnuts.GetComponent<NavMeshAgent>().destination = home4.transform.position;
-            } */
-
-            /*    var rand2 = Random.Range(0, 100);
-
-                if (rand2 <= 10)
-                {
-                    agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Green);
-                }
-                else if (rand2 <= 23)
-                {
-                    agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Grey);
-                }
-                else if (rand2 <= 44)
-                {
-                    agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Red);
-                }
-                else if (rand2 <= 68)
-                {
-                    agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Yellow);
-                }
-                else if (rand2 <= 100)
-                {
-                    agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Blue);
-                }
-            */
         }
 
     }
