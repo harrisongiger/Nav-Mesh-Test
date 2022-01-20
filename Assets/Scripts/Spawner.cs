@@ -29,9 +29,15 @@ public class Spawner : MonoBehaviour
     private float timer;
     public float ajents;
     private string agentcolor;
+    public int numb0;
+    public int numb1;
+    public int numb2;
+    public int numb3;
+    public int totalnum;
 
     private void Start()
     {
+        
         timer = Time.time + .1f;
     }
 
@@ -78,24 +84,28 @@ public class Spawner : MonoBehaviour
                 {
                     agentsnuts = Instantiate(Agent1, spawnlocation);
                     agentsnuts.GetComponent<NavMeshAgent>().destination = home1.transform.position;
+                    numb3++;
                     agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Green);
                 }
                 else if (GreenRand <= 56)
                 {
                     agentsnuts = Instantiate(Agent1, spawnlocation);
                     agentsnuts.GetComponent<NavMeshAgent>().destination = home2.transform.position;
+                    numb2++;
                     agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Green);
                 }
                 else if (GreenRand <= 84)
                 {
                     agentsnuts = Instantiate(Agent1, spawnlocation);
                     agentsnuts.GetComponent<NavMeshAgent>().destination = home3.transform.position;
+                    numb1++;
                     agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Green);
                 }
                 else if (GreenRand <= 100)
                 {
                     agentsnuts = Instantiate(Agent1, spawnlocation);
                     agentsnuts.GetComponent<NavMeshAgent>().destination = home4.transform.position;
+                    numb0++;
                     agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Green);
                 }
             }
@@ -108,24 +118,28 @@ public class Spawner : MonoBehaviour
                 {
                     agentsnuts = Instantiate(Agent1, spawnlocation);
                     agentsnuts.GetComponent<NavMeshAgent>().destination = home1.transform.position;
+                    numb3++;
                     agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Grey);
                 }
                 else if (GreyRand <= 60)
                 {
                     agentsnuts = Instantiate(Agent1, spawnlocation);
                     agentsnuts.GetComponent<NavMeshAgent>().destination = home2.transform.position;
+                    numb2++;
                     agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Grey);
                 }
                 else if (GreyRand <= 76)
                 {
                     agentsnuts = Instantiate(Agent1, spawnlocation);
                     agentsnuts.GetComponent<NavMeshAgent>().destination = home3.transform.position;
+                    numb1++;
                     agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Grey);
                 }
                 else if (GreyRand <= 100)
                 {
                     agentsnuts = Instantiate(Agent1, spawnlocation);
                     agentsnuts.GetComponent<NavMeshAgent>().destination = home4.transform.position;
+                    numb0++;
                     agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Grey);
                 }
             }
@@ -138,24 +152,28 @@ public class Spawner : MonoBehaviour
                 {
                     agentsnuts = Instantiate(Agent1, spawnlocation);
                     agentsnuts.GetComponent<NavMeshAgent>().destination = home1.transform.position;
+                    numb3++;
                     agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Red);
                 }
                 else if (RedRand <= 68)
                 {
                     agentsnuts = Instantiate(Agent1, spawnlocation);
                     agentsnuts.GetComponent<NavMeshAgent>().destination = home2.transform.position;
+                    numb2++;
                     agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Red);
                 }
                 else if (RedRand <= 87)
                 {
                     agentsnuts = Instantiate(Agent1, spawnlocation);
                     agentsnuts.GetComponent<NavMeshAgent>().destination = home3.transform.position;
+                    numb1++;
                     agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Red);
                 }
                 else if (RedRand <= 100)
                 {
                     agentsnuts = Instantiate(Agent1, spawnlocation);
                     agentsnuts.GetComponent<NavMeshAgent>().destination = home4.transform.position;
+                    numb0++;
                     agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Red);
                 }
             }
@@ -168,24 +186,28 @@ public class Spawner : MonoBehaviour
                 {
                     agentsnuts = Instantiate(Agent1, spawnlocation);
                     agentsnuts.GetComponent<NavMeshAgent>().destination = home1.transform.position;
+                    numb3++;
                     agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Yellow);
                 }
                 else if (YellowRand <= 55)
                 {
                     agentsnuts = Instantiate(Agent1, spawnlocation);
                     agentsnuts.GetComponent<NavMeshAgent>().destination = home2.transform.position;
+                    numb2++;
                     agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Yellow);
                 }
                 else if (YellowRand <= 85)
                 {
                     agentsnuts = Instantiate(Agent1, spawnlocation);
                     agentsnuts.GetComponent<NavMeshAgent>().destination = home3.transform.position;
+                    numb1++;
                     agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Yellow);
                 }
                 else if (YellowRand <= 100)
                 {
                     agentsnuts = Instantiate(Agent1, spawnlocation);
                     agentsnuts.GetComponent<NavMeshAgent>().destination = home4.transform.position;
+                    numb0++;
                     agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Yellow);
                 }
             }
@@ -198,30 +220,32 @@ public class Spawner : MonoBehaviour
                 {
                     agentsnuts = Instantiate(Agent1, spawnlocation);
                     agentsnuts.GetComponent<NavMeshAgent>().destination = home1.transform.position;
+                    numb3++;
                     agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Blue);
                 }
                 else if (BlueRand <= 28)
                 {
                     agentsnuts = Instantiate(Agent1, spawnlocation);
                     agentsnuts.GetComponent<NavMeshAgent>().destination = home2.transform.position;
+                    numb2++;
                     agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Blue);
                 }
                 else if (BlueRand <= 57)
                 {
                     agentsnuts = Instantiate(Agent1, spawnlocation);
                     agentsnuts.GetComponent<NavMeshAgent>().destination = home3.transform.position;
+                    numb1++;
                     agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Blue);
                 }
                 else if (BlueRand <= 100)
                 {
                     agentsnuts = Instantiate(Agent1, spawnlocation);
                     agentsnuts.GetComponent<NavMeshAgent>().destination = home4.transform.position;
-                    agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Blue);
+                    numb0++;
+                     agentsnuts.GetComponent<Renderer>().material.SetColor("_Color", Blue);
                 }
             }
-
         }
-
     }
 }
 //blue-fighting, red FPS, green Strategy, Yellow Sports, black others
